@@ -167,6 +167,7 @@ public class Tour {
         newNode.next = node.next;
         node.next = newNode;
     }
+    
     // tests this class by calling all constructors and instance methods
     public static void main(String[] args) {
         // define 4 points, corners of a square

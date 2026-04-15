@@ -3,6 +3,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+
         if (args.length < 1) {
             throw new IllegalArgumentException(
                     "informe o arquivo de entrada. Ex.: java Main ../dados/entrada_oficial.txt"
@@ -45,7 +46,7 @@ public class Main {
         StdOut.printf("Smallest insertion: tamanho = %d, comprimento = %.4f\n",
                 smallest.size(), smallest.length());
 
-        //TSPVisualizer.showTours(width, height, points, nearest, smallest);
-        //StdOut.println("Visualizacao gerada. Feche a janela para encerrar o programa.");
+        TSPVisualizer.showTours(width, height, points, nearest, smallest);
+        StdOut.println("Visualizacao gerada. Feche a janela para encerrar o programa.");
     }
 }
